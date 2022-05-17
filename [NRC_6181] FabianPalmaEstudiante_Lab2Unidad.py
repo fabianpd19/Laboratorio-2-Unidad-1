@@ -8,15 +8,16 @@ def encabezado ():
     print("Problelma: Hallar la potencia de cualquier número x^y.")
 #encabezado(nombre)
 #funcion para resolver el programa asignado
-def ejercicioPotencia(numero,numeroPotencia):
+def ejercicioPotencia(base,potencia):
     #realizamos el respectivo proceso para encontrar la potencia de un número
-    resultadoPotencia=numero**numeroPotencia
+    resultadoPotencia=base**potencia
     #mostramos los datos ingresados tanto como el respectivo resultado
-    print("El resultado es: ",numero,"^",numeroPotencia, "=", resultadoPotencia)
+    print("El resultado es: ",base,"^",potencia, "=", resultadoPotencia)
     return resultadoPotencia
 #llamado respectivo a cada una de las funciones para ejecutarlas
 encabezado()
 #pedir datos al usuario para resolver el problema
+#una vez usamos los argumentos, los cuales serán x=base y la y=potencia
 x=int(input("\nIngrese el número que desea elevar a una potencia: "))
 y=int(input("Ingrese la potencia:  "))
 ejercicioPotencia(x,y)
